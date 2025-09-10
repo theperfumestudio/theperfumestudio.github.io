@@ -12,7 +12,7 @@
     /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ae5ff3', endColorstr='#ae5ff3', GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */
     background-size: 4000px 100%;
-    animation: background-gradiant-animation 15s linear infinite;
+    animation: background-gradiant-animation 5s linear infinite;
 }
 @keyframes background-gradiant-animation {
   0% {
@@ -337,4 +337,5 @@ font-weight: 400;
 }
     
     
+
     

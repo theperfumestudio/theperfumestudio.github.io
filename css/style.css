@@ -339,3 +339,56 @@ font-weight: 400;
     
 
     
+
+
+
+/* Logo */
+
+
+@font-face {
+  font-family: Hidayatullah;
+  src: url(Hidayatullah.ttf);
+  font-weight: bold;
+}
+
+.logo a{
+    color: #D4AF37;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 228px;
+    font-weight: bold;
+    font-family: 'Hidayatullah';
+    /* border: 3px solid #e00034; */
+    padding: 12px 5px;
+    /* font-style: italic; */
+
+    border: 3px solid transparent;
+    border-image: linear-gradient(300deg,#d4af37,#ffffff,#c07f00,#000000) 1;
+    animation: border-gradient 7s ease infinite;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@keyframes border-gradient {
+  0% {
+    border-image-source: linear-gradient(300deg,#d4af37,#ffffff,#c07f00,#000000);
+  }
+  50% {
+    border-image-source: linear-gradient(120deg,#d4af37,#ffffff,#c07f00,#000000);
+  }
+  100% {
+    border-image-source: linear-gradient(300deg,#d4af37,#ffffff,#c07f00,#000000);
+  }
+}
+
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

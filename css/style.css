@@ -353,6 +353,7 @@ font-weight: 400;
 
 .logo a{
     color: #D4AF37;
+    background: #000;
     font-size: 25px;
     display: flex;
     align-items: center;
@@ -392,3 +393,4 @@ font-weight: 400;
     align-items: center;
     text-align: center;
 }
+

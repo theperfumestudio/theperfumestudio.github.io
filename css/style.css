@@ -31,7 +31,7 @@
     text-align: center;
     height: 100vh;
 }
-.logo{
+/* .logo{
     text-align: center;
     margin-top: 60px;
 }
@@ -53,7 +53,7 @@
     color: #fff;
     margin-top: -10px;
     letter-spacing: 1px;
-}
+} */
 #countdown ul{
     list-style: none;
     margin: 0px;
@@ -351,46 +351,73 @@ font-weight: 400;
   font-weight: bold;
 }
 
-.logo a{
-    color: #D4AF37;
-    background: #000;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 228px;
-    font-weight: bold;
-    font-family: 'Hidayatullah';
-    /* border: 3px solid #e00034; */
-    padding: 12px 5px;
-    /* font-style: italic; */
-
-    border: 3px solid transparent;
-    border-image: linear-gradient(300deg,#d4af37,#ffffff,#c07f00,#000000) 1;
-    animation: border-gradient 7s ease infinite;
-
-    text-decoration: none;
-    cursor: pointer;
-}
 
 
-@keyframes border-gradient {
-  0% {
-    border-image-source: linear-gradient(300deg,#d4af37,#ffffff,#c07f00,#000000);
-  }
-  50% {
-    border-image-source: linear-gradient(120deg,#d4af37,#ffffff,#c07f00,#000000);
-  }
-  100% {
-    border-image-source: linear-gradient(300deg,#d4af37,#ffffff,#c07f00,#000000);
-  }
-}
-
-
-.logo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.wrapper {
     text-align: center;
-}
+    margin-top: 60px;
+    display: inline-block;
+    padding: 3px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(300deg,#d4af37,#ffffff,#c07f00,#000000) 1;
+    animation: border-gradient 3s ease infinite;
+    background-color: #000;
+    }
 
+    svg {
+      font-family: "Hidayatullah", sans-serif;
+      width: 300px;
+      height: 50px;
+    }
+
+    svg text {
+      fill: none;
+      stroke: #d4af37;
+      stroke-width: 2;
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset: 25%;
+      font-size: 100px;
+      text-anchor: middle;
+      dominant-baseline: middle;
+      animation: stroke 5s infinite alternate;
+    }
+
+    /* TEXT STROKE/FILL ANIMATION */
+    @keyframes stroke {
+      0% {
+        fill: rgba(72,138,204,0);
+        stroke: #d4af37;
+        stroke-dasharray: 0 50%;
+        stroke-dashoffset: 25%;
+        stroke-width: 2;
+      }
+      70% {
+        fill: rgba(72,138,204,0);
+        stroke: #d4af37;
+      }
+      80% {
+        fill: rgba(72,138,204,0);
+        stroke: #d4af37;
+        stroke-width: 3;
+      }
+      100% {
+        fill: #d4af37;
+        stroke: rgba(54,95,160,0);
+        stroke-dasharray: 50% 0;
+        stroke-dashoffset: -25%;
+        stroke-width: 0;
+      }
+    }
+
+    /* BORDER GRADIENT ANIMATION */
+    @keyframes border-gradient {
+      0% {
+        border-image-source: linear-gradient(300deg,#d4af37,#ffffff,#c07f00,#000000);
+      }
+      50% {
+        border-image-source: linear-gradient(120deg,#d4af37,#ffffff,#c07f00,#000000);
+      }
+      100% {
+        border-image-source: linear-gradient(300deg,#d4af37,#ffffff,#c07f00,#000000);
+      }
+    }
